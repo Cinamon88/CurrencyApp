@@ -9,8 +9,8 @@ describe('ConvertPLNtoUSD', () => {
   });
 
   it('should return NaN when input is text', () => {
-    expect(convertPLNToUSD('6')).toBeNaN();
-    expect(convertPLNToUSD('abc')).toBeNaN();
-    expect(convertPLNToUSD('-543')).toBeNaN();
+    expect(convertPLNToUSD('6')).not.toBeNaN();
+    expect(convertPLNToUSD('abc')).not.toBeNaN();
+    expect(convertPLNToUSD('-543')).not.toBeNaN();
   });
 });
