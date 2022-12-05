@@ -13,4 +13,8 @@ describe('ConvertPLNtoUSD', () => {
     expect(convertPLNToUSD('abc')).not.toBeNaN();
     expect(convertPLNToUSD('-543')).not.toBeNaN();
   });
+
+  it('should return NaN when input is empty', () => {
+    expect(convertPLNToUSD()).toBeNaN();
+  });
 });
